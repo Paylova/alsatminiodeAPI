@@ -1,0 +1,12 @@
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\bin\Release\net6.0\win-x64\alsatminiode.Domain.deps.json
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\bin\Release\net6.0\win-x64\alsatminiode.Domain.dll
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\bin\Release\net6.0\win-x64\alsatminiode.Domain.pdb
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\alsatminiode.Domain.csproj.AssemblyReference.cache
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\alsatminiode.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\alsatminiode.Domain.AssemblyInfoInputs.cache
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\alsatminiode.Domain.AssemblyInfo.cs
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\alsatminiode.Domain.csproj.CoreCompileInputs.cache
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\alsatminiode.Domain.dll
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\refint\alsatminiode.Domain.dll
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\alsatminiode.Domain.pdb
+E:\alsatminiode\alsatminiodeAPI\Core\alsatminiode.Domain\obj\Release\net6.0\win-x64\ref\alsatminiode.Domain.dll

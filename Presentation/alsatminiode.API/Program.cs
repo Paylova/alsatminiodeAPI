@@ -1,0 +1,79 @@
+using alsatminiode.API;
+using alsatminiode.Application;
+using alsatminiode.Application.Validators.PhoneQuestions;
+using alsatminiode.Application.ViewModels.Email.EmailSettings;
+using alsatminiode.Infrastructure;
+using alsatminiode.Infrastructure.Filters;
+using alsatminiode.Infrastructure.Services.Storage.Local;
+using alsatminiode.Persistence;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Net;
+using System.Text;
+
+var builder = WebApplication.CreateBuilder(args);
+
+
+
+builder.WebHost.UseIISIntegration();
+builder.WebHost.UseIIS();
+builder.Services.AddHttpClient();
+
+builder.Services.AddPersistenceServices();
+builder.Services.AddInfrastructureServices();
+builder.Services.AddApplicationServices();
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
+builder.Services.AddStorage<LocalStorage>();
+//builder.Services.AddStorage<AzureStorage>();
+
+builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
+
+    policy.WithOrigins("http://www.alsatminiode.com", "https://www.alsatminiode.com", "http://localhost", "https://localhost").AllowAnyHeader().AllowAnyMethod()));
+builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
+    .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<Create_PhoneQuestion_Validator>()).ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer("Admin", options =>
+{
+    options.TokenValidationParameters = new()
+    {
+        ValidateAudience = true,
+        ValidateIssuer = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+
+        ValidAudience = builder.Configuration["Token:Audience"],
+        ValidIssuer = builder.Configuration["Token:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"])),
+
+    };
+});
+
+
+var app = builder.Build();
+app.UseMiddleware<ErrorHandlerMiddleware>();
+//app.UseSwagger();
+//app.UseSwaggerUI();
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+app.UseCors();
+app.UseStaticFiles();
+
+app.UseHttpsRedirection();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+
+app.Run();

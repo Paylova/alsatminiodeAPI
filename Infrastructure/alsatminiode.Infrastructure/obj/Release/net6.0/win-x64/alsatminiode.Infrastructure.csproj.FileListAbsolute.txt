@@ -1,0 +1,17 @@
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\bin\Release\net6.0\win-x64\alsatminiode.Infrastructure.deps.json
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\bin\Release\net6.0\win-x64\alsatminiode.Infrastructure.dll
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\bin\Release\net6.0\win-x64\alsatminiode.Infrastructure.pdb
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\bin\Release\net6.0\win-x64\alsatminiode.Application.dll
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\bin\Release\net6.0\win-x64\alsatminiode.Domain.dll
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\bin\Release\net6.0\win-x64\alsatminiode.Application.pdb
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\bin\Release\net6.0\win-x64\alsatminiode.Domain.pdb
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.csproj.AssemblyReference.cache
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.AssemblyInfoInputs.cache
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.AssemblyInfo.cs
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.csproj.CoreCompileInputs.cache
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.csproj.CopyComplete
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.dll
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\refint\alsatminiode.Infrastructure.dll
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\alsatminiode.Infrastructure.pdb
+E:\alsatminiode\alsatminiodeAPI\Infrastructure\alsatminiode.Infrastructure\obj\Release\net6.0\win-x64\ref\alsatminiode.Infrastructure.dll

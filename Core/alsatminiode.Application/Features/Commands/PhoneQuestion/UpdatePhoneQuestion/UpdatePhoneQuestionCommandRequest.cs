@@ -1,0 +1,15 @@
+﻿using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace alsatminiode.Application.Features.Commands.PhoneQuestion.UpdatePhoneQuestion
+{
+    public class UpdatePhoneQuestionCommandRequest : IRequest<UpdatePhoneQuestionCommandResponse>
+    {
+        public string id { get; set; }
+        public string QuestionText { get; set; }
+    }
+}
